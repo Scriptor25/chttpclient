@@ -5,7 +5,7 @@ option(CHTTP_INSTALL "Build the install target" OFF)
 
 file(GLOB_RECURSE src src/*.c include/*.h)
 add_library(chttp ${src})
-target_include_directories(chttpclient PUBLIC include)
+target_include_directories(chttp PUBLIC include)
 
 if(CHTTP_BUILD_EXAMPLE)
 	add_executable(CHTTPClientSample example/HTTPClientSample.c example/HTTPClientSample.h)
